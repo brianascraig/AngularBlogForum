@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Angular Blog Forum
+=======
+# Angular8
+>>>>>>> adef94416eebb98eada67f2a2535b89bba781a95
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
 
