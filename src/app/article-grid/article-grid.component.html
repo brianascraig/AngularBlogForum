@@ -1,0 +1,14 @@
+<section class="mat-app-background basic-container">
+  <mat-grid-list class="shadow rounded" cols="4" rowHeight="200px">
+    <mat-grid-tile class="tile"
+                   *ngFor = "let article of articles"
+                   [colspan] = "article.cols"
+                   [rowspan] = "article.rows">
+      <div class="artSnapshot">
+        <img class="image{{article.id}}" src = "{{article.image}}"/>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</section>
+
+

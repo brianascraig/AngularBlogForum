@@ -1,0 +1,53 @@
+<form #memberForm="ngForm" (ngSubmit)="onSave(memberForm.value)" novalidate>
+  <div>
+    <h1 mat-dialog-title>Register</h1>
+    <div mat-dialog-content>
+      <mat-form-field appearance="standard">
+        <mat-label>Email Address</mat-label>
+        <input name="id" type="text" required [(ngModel)]="id" matInput placeholder="Enter your email">
+        <mat-hint>Don't worry! We hate spam too!</mat-hint>
+      </mat-form-field>
+    </div>
+
+    <div mat-dialog-content>
+      <mat-form-field appearance="standard">
+        <mat-label>User Name</mat-label>
+        <input name="username" type="text" required [(ngModel)]="username" matInput placeholder="Enter a user name">
+        <mat-hint>User name will appear on forums</mat-hint>
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div mat-dialog-content>
+    <mat-form-field appearance="standard">
+      <mat-label>Password</mat-label>
+      <input name="password" type="password" required [(ngModel)]="password" matInput placeholder="Password">
+    </mat-form-field>
+  </div>
+  <button mat-raised-button type="submit">Update</button>
+</form>
+
+
+  <table border="1">
+    <tr>
+      <td>Email</td>
+      <td>Username</td>
+      <td>Password</td>
+    </tr>
+    <tr *ngFor="let kk of Repdata; let ind = index">
+      <td>test</td>
+      <td>{{ind + 1}}</td>
+      <td>{{kk.username}}</td>
+      <td>{{kk.password}}</td>
+      <td><a (click)="edit(kk)">Edit</a></td>
+      <td><a (click)="delete(kk.id)">Delete</a></td>
+    </tr>
+  </table>
+
+
+
+
+
+
+
+

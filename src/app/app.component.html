@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<header class="mat-elevation-z6 mat">
+  <a routerLink="/" routerLinkActive="active">
+    <img class="logo" width="100" height="100" alt="Nifty Thrifter Logo" src="https://cdn.pixabay.com/photo/2014/04/03/11/54/mannequin-312526_1280.png">
+  </a>
+    <div class="headerContainer">
+      <h1 class="headerTitle">The Nifty Thrifter Blog</h1>
+    </div>
+    <div class="menuContainer">
+              <button mat-button><a routerLink="/">Home</a></button>
+              <button mat-button><a routerLink="/about">About</a></button>
+              <button mat-button><a routerLink="/contact">Contact</a></button>
+                <button mat-button [matMenuTriggerFor]="belowMenu">Forum</button>
+                <mat-menu #belowMenu="matMenu" yPosition="below">
+                  <button mat-menu-item>Posts</button>
+                  <button mat-menu-item>Users</button>
+                </mat-menu>
+        <button mat-raised-button (click)="openLoginDialog()"><a>Login</a></button>
+        <button mat-flat-button (click)="openRegisterDialog()"><a>Register</a></button>
+    </div>
+  </header>
+<!--  <app-article-grid></app-article-grid>-->
+
+
+
+
+<router-outlet></router-outlet>
