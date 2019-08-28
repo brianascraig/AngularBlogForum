@@ -20,6 +20,7 @@ import { FormsModule} from '@angular/forms';
 import {CommonService} from './common.service';
 import { HomeComponent } from './home/home.component';
 import { ForumCardsComponent } from './forum-cards/forum-cards.component';
+import { MemberComponent } from './member/member.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ForumCardsComponent } from './forum-cards/forum-cards.component';
     routingComponents,
     ArticleGridComponent,
     HomeComponent,
-    ForumCardsComponent
+    ForumCardsComponent,
+    MemberComponent
   ],
   imports: [
     BrowserModule,

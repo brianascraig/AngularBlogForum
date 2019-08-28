@@ -13,13 +13,13 @@
                 <button mat-button [matMenuTriggerFor]="belowMenu">Forum</button>
                 <mat-menu #belowMenu="matMenu" yPosition="below">
                   <button mat-menu-item>Posts</button>
-                  <button mat-menu-item>Users</button>
+                  <button mat-menu-item><a routerLink="/members">Members</a></button>
                 </mat-menu>
         <button mat-raised-button (click)="openLoginDialog()"><a>Login</a></button>
         <button mat-flat-button (click)="openRegisterDialog()"><a>Register</a></button>
     </div>
   </header>
-<!--  <app-article-grid></app-article-grid>-->
+
 
 
 
