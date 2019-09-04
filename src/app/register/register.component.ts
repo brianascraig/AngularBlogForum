@@ -13,11 +13,6 @@ import {Member} from '../models/member.model';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
-  // private errorMessage: any;
-  // private id: string | number;
-  // private username: string;
-  // private password: string;
-  // private email: string;
 
   constructor(private router: Router, private commonService: CommonService) { }
 
@@ -30,38 +25,6 @@ export class RegisterComponent implements OnInit {
       });
   }
 
-  // Repdata;
-  // valbutton = 'Save';
-
-  // ngOnInit() {
-  //   this.commonService.getMember().subscribe(data => this.Repdata = data);
-  // }
-
-  // onSave = member => {
-  //   member.mode = this.valbutton;
-  //   this.commonService.getMember(member).subscribe(
-  //     data => {
-  //       alert(data.data);
-  //       this.ngOnInit();
-  //     }
-  //     , saveError => this.errorMessage = error);
-  // }
-  // edit = (kk) => {
-  //   this.id = kk._id;
-  //   this.username = kk.username;
-  //   this.password = kk.password;
-  //   this.email = kk.email;
-  //   this.valbutton = 'Update';
-  // }
-  //
-  // delete = (id) => {
-  //   this.commonService.deleteMember(id)
-  //     .subscribe(data => {
-  //         alert(data.data);
-  //         this.ngOnInit();
-  //       },
-  //       deleteError => this.errorMessage = error);
-  // }
 
   ngOnInit() {
 
