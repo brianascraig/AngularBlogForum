@@ -43,8 +43,10 @@
       <input name="password" type="password" required [(ngModel)]="member.password" matInput placeholder="Password">
     </mat-form-field>
   </div>
-  <button mat-raised-button type="submit" (click)="createMember()">Submit</button>
+  <button mat-raised-button type="submit" (click)="createMember()" matDialogClose>Submit</button>
 </form>
+
+<router-outlet></router-outlet>
 
 
 

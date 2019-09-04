@@ -6,6 +6,7 @@ import {error} from 'util';
 import {LoginComponent} from '../login/login.component';
 import {Router} from '@angular/router';
 import {Member} from '../models/member.model';
+import {MatDialog} from '@angular/material';
 
 @Component({
   selector: 'app-register',
@@ -24,6 +25,7 @@ export class RegisterComponent implements OnInit {
         alert('Member added');
       });
   }
+
 
 
   ngOnInit() {

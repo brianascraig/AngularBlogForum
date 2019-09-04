@@ -4,7 +4,7 @@
     <div mat-dialog-content>
       <mat-form-field appearance="standard">
         <mat-label>User Name</mat-label>
-        <input matInput placeholder="Enter a user name">
+        <input matInput [(ngModel)]="member.username"  placeholder="Enter a user name">
         <mat-hint>User name will appear on forums</mat-hint>
       </mat-form-field>
     </div>
@@ -13,11 +13,11 @@
   <div mat-dialog-content>
     <mat-form-field appearance="standard">
       <mat-label>Password</mat-label>
-      <input type="password" matInput placeholder="Password">
+      <input type="password" [(ngModel)]="member.password" matInput placeholder="Password">
     </mat-form-field>
   </div>
   <div>
-    <button mat-raised-button type="submit">Submit</button>
+    <button mat-raised-button type="submit" matDialogClose>Submit</button>
   </div>
 
 </form>

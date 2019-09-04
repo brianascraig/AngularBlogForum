@@ -27,7 +27,7 @@ export class AppComponent {
   }
 
   openLoginDialog(): void {
-    const dialogRef = this.dialog.open(LoginComponent, {
+   const dialogRef = this.dialog.open(LoginComponent, {
       width: '550px'
     });
   }
@@ -37,4 +37,5 @@ export class AppComponent {
       width: '550px'
     });
   }
+
 }
