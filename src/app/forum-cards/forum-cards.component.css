@@ -1,0 +1,11 @@
+.cardContainer{
+  margin: auto;
+}
+
+mat-card{
+  width:30%;
+  /*float: left;*/
+  display: inline-block;
+  margin: 10px;
+}
+
