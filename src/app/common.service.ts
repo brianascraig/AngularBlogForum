@@ -9,7 +9,7 @@ const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type': 'application/json',
     'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE',
+    'Access-Control-Allow-Methods': 'GET, POST, PUT, OPTIONS, DELETE',
     'Access-Control-Allow-Headers': 'X-Requested-With,content-type, Access-Control-Allow-Headers, Authorization',
     'Access-Control-Allow-Credentials': 'true'
   })
